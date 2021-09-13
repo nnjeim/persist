@@ -1,0 +1,54 @@
+{
+    "name": "nnjeim/persist",
+    "description": "Laravel cache helper methods",
+    "keywords": [
+        "nnjeim",
+        "cache"
+    ],
+    "homepage": "https://github.com/nnjeim/persist",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Najm Njeim",
+            "email": "nnjeim@nnjeim.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": ">=v4.0.0",
+        "phpunit/phpunit": ">=8.5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nnjeim\\Persist\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nnjeim\\Persist\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nnjeim\\Persist\\PersistServiceProvider"
+            ],
+            "aliases": {
+                "Persist": "Nnjeim\\Persist\\Persist"
+            }
+        }
+    }
+}
