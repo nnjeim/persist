@@ -1,13 +1,10 @@
 {
     "name": "nnjeim/persist",
     "description": "Laravel cache helper methods",
-    "keywords": [
-        "nnjeim",
-        "cache"
-    ],
+    "keywords": [ "laravel", "lumen", "cache", "redis", "helpers" ],
     "homepage": "https://github.com/nnjeim/persist",
     "license": "MIT",
-    "type": "project",
+    "type": "laravel-package",
     "authors": [
         {
             "name": "Najm Njeim",
